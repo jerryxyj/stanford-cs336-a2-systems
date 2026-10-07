@@ -52,6 +52,8 @@ line-length = 180
 [tool.ruff.lint.extend-per-file-ignores]
 # Also ignore `E402` in all `__init__.py` files.
 "__init__.py" = ["E402", "F401", "F403", "E501"]
+# FlashAttention code follows the handout's notation (Q, K, V, O, L).
+"cs336_systems/flash_attention.py" = ["E741"]
 
 [tool.ruff.lint]
 extend-select = ["UP"]
